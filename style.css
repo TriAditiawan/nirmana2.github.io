@@ -1,0 +1,348 @@
+:root {
+  --abu: #515151;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Nunito Sans", sans-serif;
+}
+nav {
+  background-color: rgb(56, 56, 255);
+  padding: 15px;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.content-utama > .img > img {
+  display: block;
+  margin: auto;
+}
+.footer {
+  height: 350px;
+  color: white;
+  background-color: rgb(29, 29, 29);
+}
+.footer > .c {
+  padding-top: 50px;
+  margin: 100px 50px;
+}
+.footer > .c > h2 > a {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin-top: 50px;
+}
+.footer > .c > .aa {
+  color: inherit;
+  text-decoration: none;
+  font-size: 1.5em;
+  line-height: 100px;
+}
+.content-utama > p > a {
+  color: blue;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.content-samping > p {
+  font-size: 12px;
+  margin: 0px 10px 20px 20px;
+}
+.art-terbaru > a {
+  border-bottom: 2px solid gray;
+  padding-bottom: 20px;
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  text-decoration: none;
+}
+.art-terbaru > a .img-art-terbaru {
+  border-radius: 10px;
+  height: 50px;
+  margin: 5px 0;
+}
+.art-terbaru > a .link-art-terbaru {
+  font-size: 14px;
+  margin: 5px 10px;
+  color: #515151;
+  font-weight: bold;
+}
+.art-terbaru > a .link-art-terbaru:hover {
+  color: rgb(56, 56, 253);
+}
+.daftar-isi {
+  background-color: #eaeaea;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 1.6em;
+}
+.daftar-isi > .tomboldi {
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: black !important;
+}
+.isidi > ul {
+  list-style: none;
+}
+.isidi > ul > li > a {
+  color: blue;
+  text-decoration: none;
+}
+.isidi > ul > .gs {
+  margin-left: 20px;
+}
+.daftar-isi > .isidi > .d-none {
+  display: none;
+}
+@media (max-width: 576px) {
+  .menu-toggle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+  }
+
+  .menu-toggle > input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -5px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+  }
+  .menu-toggle > span {
+    display: block;
+    width: 28px;
+    height: 4px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all 0.5s;
+  }
+  /* animasi menu toggle */
+  .menu-toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+  .menu-toggle span:nth-child(4) {
+    transform-origin: 0 0;
+  }
+  .menu-toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(39deg) translate(-1px, -1px);
+    background-color: black !important;
+  }
+  .menu-toggle input:checked ~ span:nth-child(4) {
+    transform: rotate(-39deg) translate(-1px, 0);
+    background-color: black !important;
+  }
+  .menu-toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+    opacity: 0;
+  }
+  nav > .judul > h2 {
+    font-size: 18px;
+  }
+  nav > ul {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 50px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(56, 56, 255);
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 80%;
+    transform: translateY(-120%);
+    transition: all 1s;
+  }
+  nav > ul.slide {
+    transform: translateY(0);
+  }
+  nav > ul > li > a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  .jumbotron-text {
+    margin: 20px;
+  }
+  .jumbotron-text > a {
+    font-size: 12px;
+    color: var(--abu);
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .jumbotron-text > h1 {
+    font-size: 28px;
+    margin-top: 10px;
+  }
+  .jumbotron-img > img {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+  .jumbotron-text > .flex {
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: bold;
+    color: var(--abu);
+
+    display: flex;
+  }
+  .jumbotron-text > .flex > .time {
+    margin-left: 15px;
+  }
+  .content-utama > .img > img {
+    width: 70%;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+  }
+
+  .content-utama > h2 {
+    margin: 20px 0;
+  }
+  .content-utama > p {
+    margin: 20px 0;
+    letter-spacing: 0.03em;
+    line-height: 1.5em;
+    font-size: 14px;
+  }
+  .content-utama > ul {
+    list-style: decimal;
+    margin-left: 20px;
+  }
+  .content-utama > .img > p {
+    font-size: 12px;
+    margin: 10px 20px;
+  }
+  .content-samping > h2 {
+    margin: 100px 10px 20px 20px;
+  }
+
+  .content-samping > .trending {
+    margin: 100px 10px 20px 20px;
+  }
+}
+@media (min-width: 768px) {
+}
+@media (min-width: 992px) {
+  .jumbotron {
+    display: flex;
+    height: 600px;
+    background-color: rgb(41, 40, 40);
+    color: white;
+  }
+  .jumbotron-text {
+    order: 1;
+    flex: 1;
+    margin: 100px 50px;
+  }
+  .jumbotron-text > a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 0.05em;
+    font-size: 12px;
+  }
+  .jumbotron-text > h1 {
+    font-size: 2.2em;
+    margin-top: 50px;
+  }
+  .jumbotron-text > .flex {
+    font-size: 14px;
+    margin-top: 20px;
+    font-weight: bold;
+    display: flex;
+  }
+  .jumbotron-text > .flex > .time {
+    margin-left: 15px;
+  }
+  .jumbotron-img {
+    background-image: url(./img/bg-jumbotron.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    order: 2;
+    flex: 1.2;
+  }
+  .jumbotron > .jumbotron-img > .img-jumbotron {
+    display: none;
+  }
+  .container {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+  }
+
+  .content-utama > h2 {
+    margin: 20px 0;
+  }
+  .content-utama > p {
+    margin: 20px 0;
+    letter-spacing: 0.03em;
+    line-height: 1.5em;
+    font-size: 16px;
+  }
+  .content-utama > ul {
+    list-style: decimal;
+    margin-left: 20px;
+  }
+  .content-utama {
+    flex: 2;
+  }
+  .content-samping {
+    flex: 1;
+  }
+  .content-utama > .img > p {
+    font-size: 14px;
+    margin: 10px 50px;
+  }
+
+  .content-samping > h2 {
+    margin: 20px 10px 20px 20px;
+  }
+
+  .content-samping > .trending {
+    margin: 200px 10px 20px 20px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  nav > .judul > h2 {
+    font-size: 24px;
+  }
+  nav > ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+  nav > ul > li > a {
+    text-decoration: none;
+    color: white !important;
+    margin-right: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: "Open Sans", sans-serif;
+  }
+  nav > ul > li > a:hover {
+    color: black !important;
+  }
+  nav > .menu-toggle {
+    display: none;
+  }
+}
