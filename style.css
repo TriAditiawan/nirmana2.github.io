@@ -53,6 +53,7 @@ nav {
   font-size: 12px;
   margin: 0px 10px 20px 20px;
 }
+
 .art-terbaru > a {
   border-bottom: 2px solid gray;
 
@@ -327,6 +328,19 @@ nav {
   .content-utama > ul {
     list-style: decimal;
     margin-left: 20px;
+  }
+  .art-terbaru > a {
+    margin: 15px auto;
+    padding-bottom: 15px;
+  }
+  .content-samping > h2 {
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .content-samping > p {
+    font-size: 12px;
+    margin-left: 50px;
   }
 }
 @media (min-width: 992px) {
