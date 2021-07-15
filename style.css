@@ -1,5 +1,6 @@
 :root {
   --abu: #515151;
+  --white: #fff;
 }
 * {
   margin: 0;
@@ -7,11 +8,12 @@
 }
 body {
   font-family: "Nunito Sans", sans-serif;
+  background-color: var(--white);
 }
 nav {
   background-color: rgb(56, 56, 255);
   padding: 15px;
-  color: white;
+  color: var(--white);
   display: flex;
   justify-content: space-around;
 }
@@ -22,7 +24,7 @@ nav {
 }
 .footer {
   height: 350px;
-  color: white;
+  color: var(--white);
   background-color: rgb(29, 29, 29);
 }
 .footer > .c {
@@ -53,9 +55,9 @@ nav {
 }
 .art-terbaru > a {
   border-bottom: 2px solid gray;
-  padding-bottom: 20px;
+
   width: 90%;
-  margin: 20px auto;
+
   display: flex;
   text-decoration: none;
 }
@@ -67,7 +69,7 @@ nav {
 .art-terbaru > a .link-art-terbaru {
   font-size: 14px;
   margin: 5px 10px;
-  color: #515151;
+  color: var(--abu);
   font-weight: bold;
 }
 .art-terbaru > a .link-art-terbaru:hover {
@@ -100,7 +102,7 @@ nav {
 .daftar-isi > .isidi > .d-none {
   display: none;
 }
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .menu-toggle {
     display: flex;
     flex-direction: column;
@@ -169,7 +171,7 @@ nav {
     transform: translateY(0);
   }
   nav > ul > li > a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     font-size: 16px;
   }
@@ -234,15 +236,17 @@ nav {
   .content-samping > .trending {
     margin: 100px 10px 20px 20px;
   }
+  .art-terbaru > a {
+    margin: 10px auto;
+    padding-bottom: 10px;
+  }
 }
 @media (min-width: 768px) {
-}
-@media (min-width: 992px) {
   .jumbotron {
     display: flex;
     height: 600px;
     background-color: rgb(41, 40, 40);
-    color: white;
+    color: var(--white);
   }
   .jumbotron-text {
     order: 1;
@@ -250,7 +254,7 @@ nav {
     margin: 100px 50px;
   }
   .jumbotron-text > a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     letter-spacing: 0.05em;
     font-size: 12px;
@@ -278,13 +282,39 @@ nav {
   .jumbotron > .jumbotron-img > .img-jumbotron {
     display: none;
   }
+  nav {
+    display: flex;
+    justify-content: space-around;
+  }
+  nav > .judul > h2 {
+    font-size: 24px;
+  }
+  nav > ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin: 5px 0;
+  }
+  nav > ul > li > a {
+    text-decoration: none;
+    color: var(--white) !important;
+    margin-right: 20px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: "Open Sans", sans-serif;
+  }
+  nav > ul > li > a:hover {
+    color: black !important;
+  }
+  nav > .menu-toggle {
+    display: none;
+  }
   .container {
     width: 90%;
     margin: auto;
-
-    display: flex;
   }
-
   .content-utama > h2 {
     margin: 20px 0;
   }
@@ -298,6 +328,17 @@ nav {
     list-style: decimal;
     margin-left: 20px;
   }
+}
+@media (min-width: 992px) {
+  body {
+    max-width: 1200px;
+    overflow-x: hidden;
+    margin: auto;
+  }
+  .container {
+    display: flex;
+  }
+
   .content-utama {
     flex: 2;
   }
@@ -316,33 +357,14 @@ nav {
   .content-samping > .trending {
     margin: 200px 10px 20px 20px;
   }
-  nav {
-    display: flex;
-    justify-content: space-around;
-  }
   nav > .judul > h2 {
-    font-size: 24px;
+    margin-left: -180px;
   }
   nav > ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-between;
-    margin: 5px 0;
+    margin-right: -200px;
   }
-  nav > ul > li > a {
-    text-decoration: none;
-    color: white !important;
-    margin-right: 20px;
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: bold;
-    letter-spacing: 2px;
-    font-family: "Open Sans", sans-serif;
-  }
-  nav > ul > li > a:hover {
-    color: black !important;
-  }
-  nav > .menu-toggle {
-    display: none;
+  .art-terbaru > a {
+    margin: 20px auto;
+    padding-bottom: 20px;
   }
 }
